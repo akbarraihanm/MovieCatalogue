@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="17dp"
+        android:orientation="vertical"
+        tools:context=".DetailActivity">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                tools:src="#000"
+        />
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/tv_judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Judul Filmnya Ini Woy"
+                    android:textSize="25sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="13dp"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="19dp"
+            />
+            <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Status"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="13dp"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budget"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7dp"
+            />
+            <TextView
+                    android:id="@+id/tv_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Status"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="13dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+    />
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000"
+            tools:text="Lorem ipsum dulur amet wkowkdoawdjndf asfbasdnf asdf "
+    />
+
+</LinearLayout>

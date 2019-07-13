@@ -17,7 +17,7 @@ import com.example.moviecatalogue.R
 import com.example.moviecatalogue.model.ListMovie
 import kotlinx.android.synthetic.main.lvmovie_catalogue.view.*
 
-class ListViewAdapter (private val context: Context, private val listMovie : ArrayList<ListMovie>) : BaseAdapter(){
+class ListViewAdapter(private val context: Context?, private val listMovie: ArrayList<ListMovie>) : BaseAdapter(){
 
     private lateinit var listPict : TypedArray
     private lateinit var listName : Array<String>
@@ -28,17 +28,19 @@ class ListViewAdapter (private val context: Context, private val listMovie : Arr
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
-        listPict = context.resources.obtainTypedArray(R.array.image_poster)
-        listName = context.resources.getStringArray(R.array.name_poster)
-        listDetail = context.resources.getStringArray(R.array.detail_poster)
-        listStatus = context.resources.getStringArray(R.array.status)
-        listBudget = context.resources.getStringArray(R.array.budget)
+        if (context != null) {
+            listPict = context.resources.obtainTypedArray(R.array.image_poster)
+            listName = context.resources.getStringArray(R.array.name_poster)
+            listDetail = context.resources.getStringArray(R.array.detail_poster)
+            listStatus = context.resources.getStringArray(R.array.status)
+            listBudget = context.resources.getStringArray(R.array.budget)
+        }
 
         val holder : ViewHolder
         var view = convertView
         if(view == null){
             holder = ViewHolder()
-            val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            val inflater = context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             view = inflater.inflate(R.layout.lvmovie_catalogue, null, true)
 
             holder.ivPoster = view.iv_poster
@@ -50,7 +52,7 @@ class ListViewAdapter (private val context: Context, private val listMovie : Arr
             holder = view.tag as ViewHolder
         }
 
-        holder.ivPoster!!.setImageResource(listMovie[position].pict!!)
+        listMovie[position].pict?.let { holder.ivPoster?.setImageResource(it) }
         holder.tvJudul!!.text = listMovie[position].name
 
         holder.ivPoster!!.setOnClickListener {
@@ -62,10 +64,12 @@ class ListViewAdapter (private val context: Context, private val listMovie : Arr
             listJudul.budget = listBudget[position]
 
             val i = Intent(context, DetailActivity::class.java)
-            i.putExtra(DetailActivity.EXTRA_PICT, listJudul)
+//            i.putExtra(DetailActivity.EXTRA_PICT, listJudul)
 
-            context.startActivity(i)
-            Toast.makeText(context, "Item dipilih : "+listMovie[position].name, Toast.LENGTH_SHORT).show()
+            if (context != null) {
+                context.startActivity(i)
+                Toast.makeText(context, "Item dipilih : "+listMovie[position].name, Toast.LENGTH_SHORT).show()
+            }
 
         }
 

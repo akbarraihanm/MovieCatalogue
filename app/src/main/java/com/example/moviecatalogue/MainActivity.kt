@@ -9,8 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var listAdapter : ListViewAdapter
-
+    private lateinit var listAdapter : ListViewAdapter
     private lateinit var listPict : TypedArray
     private lateinit var listName : Array<String>
 
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         listName = resources.getStringArray(R.array.name_poster)
 
         listAdapter = ListViewAdapter(this, populateList())
-        this.lv_list.adapter = listAdapter
+        lv_list.adapter = listAdapter
     }
 
     private fun populateList(): ArrayList<ListMovie> {

@@ -8,6 +8,23 @@
         <item>@drawable/poster_bohemian</item>
         <item>@drawable/poster_deadpool</item>
         <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_glass</item>
+        <item>@drawable/poster_hunterkiller</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_venom</item>
+    </array>
+
+    <array name="image_tvshow">
+        <item>@drawable/poster_arrow</item>
+        <item>@drawable/poster_doom_patrol</item>
+        <item>@drawable/poster_the_walking_dead</item>
+        <item>@drawable/poster_gotham</item>
+        <item>@drawable/poster_grey_anatomy</item>
+        <item>@drawable/poster_hanna</item>
+        <item>@drawable/poster_iron_fist</item>
+        <item>@drawable/poster_shameless</item>
+        <item>@drawable/poster_supergirl</item>
+        <item>@drawable/poster_supernatural</item>
     </array>
 
     <string-array name="name_poster">
@@ -17,15 +34,141 @@
         <item>Bohemian Rhapsody</item>
         <item>Once Upon a Deadpool</item>
         <item>How To Train Your Dragon : The Hidden World</item>
+        <item>Glass</item>
+        <item>Hunter Killer</item>
+        <item>Spider-Man: Into the Spider-Verse</item>
+        <item>Venom</item>
+    </string-array>
+
+    <string-array name="title_tvshow">
+        <item>Arrow</item>
+        <item>Doom Patrol</item>
+        <item>The Walking Dead</item>
+        <item>Gotham</item>
+        <item>Grey\'s Anatomy</item>
+        <item>Hanna</item>
+        <item>Marvel\'s Iron Fist</item>
+        <item>Shameless</item>
+        <item>Supergirl</item>
+        <item>Supernatural</item>
     </string-array>
 
     <string-array name="detail_poster">
-        <item>Seasoned musician Jackson Maine discovers and falls in love with struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jack coaxes her into the spotlight. But even as Ally\'s career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons</item>
-        <item>Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm\'s hal-fhuman, half-Atlantean brother and true heir to the throne</item>
-        <item>As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment the fate of Earth and existence itself has never been more uncertain</item>
-        <item>Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock \'n\' roll band Queen in 1970. Hit songs become instant classics. When Mercury\'s increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet finding a way to keep the band together amid the success and excess</item>
-        <item>A kidnapped Fred Savage is forced to endure Deadpool\'s PG-13 rendition of Deadpool 2 as a Princess Bride-esque story that\'s full of magic, wonder &amp; zero F\'s.</item>
-        <item>As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind</item>
+        <item>Seasoned musician Jackson Maine discovers and falls in love with struggling artist Ally. She has just
+            about given up on her dream to make it big as a singer until Jack coaxes her into the spotlight. But even as
+            Ally\'s career takes off, the personal side of their relationship is breaking down, as Jack fights an
+            ongoing battle with his own internal demons
+        </item>
+        <item>Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the
+            power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people
+            and then the surface world. Standing in his way is Arthur Curry, Orm\'s half-human, half-Atlantean brother
+            and true heir to the throne
+        </item>
+        <item>As the Avengers and their allies have continued to protect the world from threats too large for any one
+            hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy,
+            his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his
+            twisted will on all of reality. Everything the Avengers have fought for has led up to this moment the fate
+            of Earth and existence itself has never been more uncertain
+        </item>
+        <item>Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the
+            music world by storm when they form the rock \'n\' roll band Queen in 1970. Hit songs become instant
+            classics. When Mercury\'s increasingly wild lifestyle starts to spiral out of control, Queen soon faces its
+            greatest challenge yet finding a way to keep the band together amid the success and excess
+        </item>
+        <item>A kidnapped Fred Savage is forced to endure Deadpool\'s PG-13 rendition of Deadpool 2 as a Princess
+            Bride-esque story that\'s full of magic, wonder &amp; zero F\'s.
+        </item>
+        <item>As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed,
+            elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is
+            tested, both dragon and rider must make impossible decisions to save their kind
+        </item>
+        <item>
+            In a series of escalating encounters,
+            former security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb,
+            a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah
+            Price emerges as an orchestrator who holds secrets critical to both men.
+        </item>
+        <item>
+            Captain Glass of the USS Arkansas discovers that a coup d\'etat is taking place in Russia,
+            so he and his crew join an elite group working on the ground to prevent a war.
+        </item>
+        <item>
+            Miles Morales is juggling his life between being a high school student and being a spider-man.
+            When Wilson "Kingpin" Fisk uses a super collider, others from across the Spider-Verse are transported to
+            this dimension.
+        </item>
+        <item>
+            Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the
+            host of Venom,
+            a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world
+            from a shadowy
+            organization looking for a symbiote of their own.
+        </item>
+    </string-array>
+
+    <string-array name="detail_tvshow">
+        <item>
+            Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea.
+            He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with
+            a bow.
+        </item>
+        <item>
+            The Doom Patrol’s members each suffered horrible accidents that gave them superhuman abilities — but also
+            left them
+            scarred and disfigured. Traumatized and downtrodden, the team found purpose through The Chief, who brought
+            them together
+            to investigate the weirdest phenomena in existence — and to protect Earth from what they find.
+        </item>
+        <item>
+            Sheriff\'s deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated
+            by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.
+        </item>
+        <item>
+            Before there was Batman, there was GOTHAM.
+            Everyone knows the name Commissioner Gordon. He is one of the crime world\'s greatest foes, a man whose
+            reputation
+            is synonymous with law and order. But what is known of Gordon\'s story and his rise from rookie detective to
+            Police
+            Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham
+            City, the
+            spawning ground of the world\'s most iconic villains? And what circumstances created them – the
+            larger-than-life personas
+            who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?
+        </item>
+        <item>
+            Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.
+        </item>
+        <item>
+            This thriller and coming-of-age drama follows the journey of an extraordinary young girl as she evades the
+            relentless pursuit of an off-book CIA agent and tries to unearth the truth behind who she is. Based on the
+            2011 Joe Wright film.
+        </item>
+        <item>
+            Danny Rand resurfaces 15 years after being presumed dead. Now, with the power of the Iron Fist, he seeks to
+            reclaim his past and fulfill his destiny.
+        </item>
+        <item>
+            Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without
+            him would be… perhaps better off.
+            When Frank\'s not at the bar spending what little money they have, he\'s passed out on the floor. But the
+            kids have found ways to grow up in spite of him.
+            They may not be like any family you know, but they make no apologies for being exactly who they are.
+        </item>
+        <item>
+            Twenty-four-year-old Kara Zor-El, who was taken in by the Danvers family when she was 13 after being sent
+            away from Krypton, must learn to embrace her powers after previously hiding them. The Danvers teach her to
+            be careful with her powers, until she has to reveal them during an unexpected disaster, setting her on her
+            journey of heroism.
+        </item>
+        <item>
+            When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural
+            force. Subsequently, their
+            father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners
+            and on the back roads of America …
+            and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their \'67 Chevy
+            Impala, battling every kind of
+            supernatural threat they encounter along the way.
+        </item>
     </string-array>
 
     <string-array name="status">
@@ -35,14 +178,65 @@
         <item>Released</item>
         <item>Released</item>
         <item>Released</item>
+        <item>Released</item>
+        <item>Released</item>
+        <item>Released</item>
+        <item>Released</item>
+    </string-array>
+
+    <string-array name="status_tvshow">
+        <item>Returning Series</item>
+        <item>Returning Series</item>
+        <item>Returning Series</item>
+        <item>Returning Series</item>
+        <item>Ended</item>
+        <item>Returning Series</item>
+        <item>Canceled</item>
+        <item>Returning Series</item>
+        <item>Returning Series</item>
+        <item>Returning Series</item>
     </string-array>
 
     <string-array name="budget">
         <item>$36,000,000.00</item>
         <item>$160,000,000.00</item>
-        <item> $300,000,000.00</item>
+        <item>$300,000,000.00</item>
         <item>$52,000,000.00</item>
         <item>-</item>
-        <item> $129,000,000.00</item>
+        <item>$129,000,000.00</item>
+        <item>$20,000,000.00</item>
+        <item>-</item>
+        <item>$90,000,000.00</item>
+        <item>$116,000,000.00</item>
     </string-array>
+
+    <string-array name="runtime_tvshow">
+        <item>42m</item>
+        <item>60m</item>
+        <item>42m, 60m, 45m</item>
+        <item>43m, 60m</item>
+        <item>43m</item>
+        <item>50m</item>
+        <item>55m</item>
+        <item>60m, 55m</item>
+        <item>42m</item>
+        <item>45m</item>
+    </string-array>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="movie">Movies</string>
+    <string name="tv_show">Tv Shows</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_tvshow">Tv Shows</string>
+    <string name="status">Status</string>
+    <string name="budget">Budget</string>
+    <string name="overview">Overview</string>
+    <string name="title_detail">Detail</string>
+    <string name="runtime">Runtime</string>
+    <string name="change_language">Change Language</string>
 </resources>

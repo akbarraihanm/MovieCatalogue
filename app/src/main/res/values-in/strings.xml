@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+
+    <array name="image_poster">
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_glass</item>
+        <item>@drawable/poster_hunterkiller</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_venom</item>
+    </array>
+
+    <array name="image_tvshow">
+        <item>@drawable/poster_arrow</item>
+        <item>@drawable/poster_doom_patrol</item>
+        <item>@drawable/poster_the_walking_dead</item>
+        <item>@drawable/poster_gotham</item>
+        <item>@drawable/poster_grey_anatomy</item>
+        <item>@drawable/poster_hanna</item>
+        <item>@drawable/poster_iron_fist</item>
+        <item>@drawable/poster_shameless</item>
+        <item>@drawable/poster_supergirl</item>
+        <item>@drawable/poster_supernatural</item>
+    </array>
+
+    <string-array name="name_poster">
+        <item>A Star is Born</item>
+        <item>Aquaman</item>
+        <item>Avengers : Infinity War</item>
+        <item>Bohemian Rhapsody</item>
+        <item>Once Upon a Deadpool</item>
+        <item>How To Train Your Dragon : The Hidden World</item>
+        <item>Glass</item>
+        <item>Hunter Killer</item>
+        <item>Spider-Man: Into the Spider-Verse</item>
+        <item>Venom</item>
+    </string-array>
+
+    <string-array name="title_tvshow">
+        <item>Arrow</item>
+        <item>Doom Patrol</item>
+        <item>The Walking Dead</item>
+        <item>Gotham</item>
+        <item>Grey\'s Anatomy</item>
+        <item>Hanna</item>
+        <item>Marvel\'s Iron Fist</item>
+        <item>Shameless</item>
+        <item>Supergirl</item>
+        <item>Supernatural</item>
+    </string-array>
+
+    <string-array name="detail_poster">
+        <item>Musisi kawakan, Jackson Maine, menemukan dan jatuh cinta pada artis yang sedang berjuang, Ally. Dia baru saja
+            tentang menyerah pada besar sebagai penyanyi sampai Jack membujuknya menjadi sorotan. Tetapi bahkan sebagai
+            Karier Ally lepas landas, sisi pribadi dari hubungan mereka rusak, seperti Jack berkelahi
+            pertempuran yang sedang berlangsung dengan setan internal sendiri
+        </item>
+        <item>Setelah rumah bagi peradaban paling maju di Bumi, Atlantis sekarang merupakan kerajaan bawah laut yang diperintah oleh
+            Raja Orm yang haus kekuasaan. Dengan pasukan yang sangat besar, Orm berencana untuk menaklukkan orang-orang samudera yang tersisa
+            dan kemudian dunia permukaan. Yang menghalanginya adalah Arthur Curry, saudara setengah manusia, setengah saudara lelaki Atlantis
+            dan pewaris sejati takhta
+        </item>
+        <item>Ketika Avengers dan sekutu mereka terus melindungi dunia dari ancaman yang terlalu besar bagi siapa pun
+            Pahlawan yang harus ditangani, bahaya baru telah muncul dari bayang-bayang kosmik: Thanos. Seorang lalim keburukan intergalaksi,
+            tujuannya adalah untuk mengumpulkan semua enam Batu Infinity, artefak dari kekuatan yang tak terbayangkan, dan menggunakannya untuk menimbulkan
+            keinginan bengkok pada semua realitas. Segala yang Avengers telah perjuangkan telah menyebabkan nasib saat ini
+            Bumi dan keberadaannya sendiri tidak pernah lebih pasti
+        </item>
+        <item>Penyanyi Freddie Mercury, gitaris Brian May, drummer Roger Taylor dan gitaris bass John Deacon mengambil
+            dunia musik oleh badai ketika mereka membentuk band rock Queen Rock pada tahun 1970. Lagu-lagu hit menjadi instan
+            klasik. Ketika gaya hidup Mercury yang semakin liar mulai lepas kendali, Queen segera menghadapinya
+            tantangan terbesar belum menemukan cara untuk menjaga band bersama di tengah kesuksesan dan kelebihan
+        </item>
+        <item>Fred Savage yang diculik dipaksa untuk menanggung rendering Deadpool 2 PG-13 Deadpool sebagai Putri.
+            Cerita pengantin perempuan yang penuh dengan keajaiban, keajaiban &amp; nol F.
+        </item>
+        <item>
+            Saat Hiccup memenuhi mimpinya untuk menciptakan utopia naga yang damai, penemuan Toothless ’yang liar,
+            pasangan yang sulit ditangkap menarik Night Fury. Ketika bahaya meningkat di rumah dan pemerintahan Hiccup sebagai kepala desa
+            diuji, baik naga dan pengendara harus membuat keputusan yang mustahil untuk menyelamatkan jenis mereka
+        </item>
+        <item>
+            Dalam serangkaian pertemuan yang meningkat,
+            mantan penjaga keamanan David Dunn menggunakan kemampuan gaibnya untuk melacak Kevin Wendell Crumb,
+            seorang pria terganggu yang memiliki dua puluh empat kepribadian. Sementara itu, kehadiran bayangan Elia
+            Price muncul sebagai orkestrator yang menyimpan rahasia penting bagi keduanya.
+        </item>
+        <item>
+            Kapten Glass dari USS Arkansas menemukan bahwa kudeta sedang terjadi di Rusia,
+            jadi dia dan krunya bergabung dengan kelompok elit yang bekerja di tanah untuk mencegah perang.
+        </item>
+        <item>
+            Miles Morales menyulap hidupnya antara menjadi siswa sekolah menengah dan menjadi manusia laba-laba.
+            Ketika Wilson "Kingpin" Fisk menggunakan collider super, yang lain dari seberang Spider-Verse diangkut ke
+            dimensi ini.
+        </item>
+        <item>
+            Jurnalis investigasi Eddie Brock berusaha untuk kembali setelah skandal, tetapi tidak sengaja menjadi
+            tuan rumah Venom,
+            symbiote alien yang keras dan sangat kuat. Segera, ia harus mengandalkan kekuatan yang baru ditemukannya untuk melindungi dunia
+            dari bayangan
+            organisasi mencari symbiote mereka sendiri.
+        </item>
+    </string-array>
+
+    <string-array name="detail_tvshow">
+        <item>
+            Playboy miliarder manja, Oliver Queen, hilang dan diduga tewas ketika kapal pesiarnya hilang di laut.
+            Dia kembali lima tahun kemudian seorang pria yang berubah, bertekad untuk membersihkan kota sebagai main hakim sendiri bersenjatakan
+            sebuah busur.
+        </item>
+        <item>
+            Anggota Patroli Doom masing-masing mengalami kecelakaan mengerikan yang memberi mereka kemampuan manusia super - tetapi juga
+            tinggalkan mereka
+            bekas luka dan cacat. Trauma dan tertindas, tim menemukan tujuan melalui Ketua, yang membawa
+            mereka bersama
+            untuk menyelidiki fenomena paling aneh yang ada - dan untuk melindungi Bumi dari apa yang mereka temukan.
+        </item>
+        <item>
+            Wakil Sheriff Rick Grimes terbangun dari koma untuk menemukan dunia pasca-apokaliptik yang didominasi
+            oleh zombie pemakan daging. Dia berangkat untuk menemukan keluarganya dan bertemu banyak penyintas lainnya di sepanjang jalan.
+        </item>
+        <item>
+            Sebelum ada Batman, ada GOTHAM.
+            Semua orang tahu nama Komisaris Gordon. Dia adalah salah satu musuh terbesar dunia kejahatan, seorang pria yang
+            reputasi
+            identik dengan hukum dan ketertiban. Tapi apa yang diketahui dari kisah Gordon dan kebangkitannya dari detektif pemula ke
+            polisi
+            Komisaris? Apa yang diperlukan untuk menavigasi berbagai lapisan korupsi yang diam-diam memerintah Gotham
+            Kota, itu
+            tempat bertelur penjahat paling ikonik di dunia? Dan keadaan apa yang menciptakan mereka -
+            kepribadian lebih besar dari kehidupan
+            siapa yang akan menjadi Catwoman, The Penguin, The Riddler, Two-Face dan The Joker?
+        </item>
+        <item>
+            Ikuti kehidupan pribadi dan profesional sekelompok dokter di Rumah Sakit Gray Sloan Memorial di Seattle.
+        </item>
+        <item>
+            Drama yang menegangkan dan menjadi dewasa ini mengikuti perjalanan seorang gadis muda yang luar biasa ketika dia menghindarinya
+            pengejaran tanpa henti dari agen CIA off-book dan mencoba untuk menggali kebenaran di balik siapa dia. Berdasarkan
+            Film Joe Wright 2011.
+        </item>
+        <item>
+            Danny Rand muncul kembali 15 tahun setelah dianggap mati. Sekarang, dengan kekuatan Iron Fist, dia berusaha
+            merebut kembali masa lalunya dan memenuhi takdirnya.
+        </item>
+        <item>
+            Chicagoan Frank Gallagher adalah ayah tunggal kebanggaan dari enam anak yang cerdas, rajin, mandiri, yang
+            tanpa anak
+            dia akan … mungkin lebih baik.
+            Ketika Frank tidak di bar menghabiskan sedikit uang yang mereka miliki, dia pingsan di lantai. Tetapi
+            anak-anak telah menemukan cara untuk tumbuh meskipun dia.
+            Mereka mungkin tidak seperti keluarga yang Anda kenal, tetapi mereka tidak meminta maaf karena menjadi diri
+            mereka yang sebenarnya.
+        </item>
+        <item>
+            Kara Zor-El, 24 tahun, yang dibawa oleh keluarga Danvers ketika dia berusia 13 tahun setelah dikirim
+            jauh dari Krypton, harus belajar merangkul kekuatannya setelah sebelumnya menyembunyikannya. Danvers mengajarinya
+            hati-hati dengan kekuatannya, sampai dia harus mengungkapkannya selama bencana yang tak terduga, menempatkannya padanya
+            perjalanan kepahlawanan.
+        </item>
+        <item>
+            Ketika mereka masih kecil, Sam dan Dean Winchester kehilangan ibu mereka karena supranatural yang misterius
+            dan jahat
+            memaksa. Selanjutnya, mereka
+            Ayah mengangkat mereka menjadi tentara. Dia mengajar mereka tentang kejahatan paranormal yang hidup di
+            sudut-sudut gelap
+            dan di jalan belakang Amerika …
+            dan dia mengajari mereka cara membunuhnya. Sekarang, saudara-saudara Winchester merambah seluruh negeri
+            dengan Chevy mereka
+            Impala, berjuang melawan semua jenis
+            ancaman supranatural yang mereka temui di sepanjang jalan.
+        </item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+        <item>Dirilis</item>
+    </string-array>
+
+    <string-array name="status_tvshow">
+        <item>Kembali tayang</item>
+        <item>Kembali tayang</item>
+        <item>Kembali tayang</item>
+        <item>Kembali tayang</item>
+        <item>Selesai</item>
+        <item>Kembali tayang</item>
+        <item>Dibatalkan</item>
+        <item>Kembali tayang</item>
+        <item>Kembali tayang</item>
+        <item>Kembali tayang</item>
+    </string-array>
+
+    <string-array name="budget">
+        <item>$36,000,000.00</item>
+        <item>$160,000,000.00</item>
+        <item>$300,000,000.00</item>
+        <item>$52,000,000.00</item>
+        <item>-</item>
+        <item>$129,000,000.00</item>
+        <item>$20,000,000.00</item>
+        <item>-</item>
+        <item>$90,000,000.00</item>
+        <item>$116,000,000.00</item>
+    </string-array>
+
+    <string-array name="runtime_tvshow">
+        <item>42m</item>
+        <item>60m</item>
+        <item>42m, 60m, 45m</item>
+        <item>43m, 60m</item>
+        <item>43m</item>
+        <item>50m</item>
+        <item>55m</item>
+        <item>60m, 55m</item>
+        <item>42m</item>
+        <item>45m</item>
+    </string-array>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="movie">Film</string>
+    <string name="tv_show">Acara TV</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_movies">Film</string>
+    <string name="title_tvshow">Acara TV</string>
+    <string name="status">Status</string>
+    <string name="budget">Ongkos</string>
+    <string name="overview">Rincian</string>
+    <string name="title_detail">Detil</string>
+    <string name="runtime">Waktu Berjalan</string>
+    <string name="change_language">Ganti Bahasa</string>
+</resources>

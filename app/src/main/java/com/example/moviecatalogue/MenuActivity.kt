@@ -1,16 +1,20 @@
 package com.example.moviecatalogue
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.provider.Settings
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View.GONE
 import android.widget.TextView
-import com.example.moviecatalogue.fragment.MovieFragment
-import com.example.moviecatalogue.fragment.TvShowFragment
+import com.example.moviecatalogue.movies.MovieFragment
+import com.example.moviecatalogue.tvshows.TvShowFragment
+import kotlinx.android.synthetic.main.fragment_movie.*
 
 class MenuActivity : AppCompatActivity() {
 

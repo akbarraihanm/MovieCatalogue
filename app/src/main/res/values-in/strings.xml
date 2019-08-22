@@ -245,4 +245,5 @@
     <string name="title_detail">Detil</string>
     <string name="runtime">Waktu Berjalan</string>
     <string name="change_language">Ganti Bahasa</string>
+    <string name="lang">id-ID</string>
 </resources>

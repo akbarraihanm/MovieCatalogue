@@ -239,4 +239,5 @@
     <string name="title_detail">Detail</string>
     <string name="runtime">Runtime</string>
     <string name="change_language">Change Language</string>
+    <string name="lang">en-US</string>
 </resources>

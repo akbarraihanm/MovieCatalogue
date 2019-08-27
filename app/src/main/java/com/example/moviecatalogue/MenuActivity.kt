@@ -12,13 +12,13 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View.GONE
 import android.widget.TextView
+import com.example.moviecatalogue.favorites.FavoritesFragment
 import com.example.moviecatalogue.movies.MovieFragment
 import com.example.moviecatalogue.tvshows.TvShowFragment
 import kotlinx.android.synthetic.main.fragment_movie.*
 
 class MenuActivity : AppCompatActivity() {
 
-    private lateinit var textMessage: TextView
     private lateinit var fragment : Fragment
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -40,6 +40,15 @@ class MenuActivity : AppCompatActivity() {
                     .replace(R.id.container_layout, fragment, fragment.javaClass.simpleName)
                     .commit()
                 supportActionBar?.title = getString(R.string.title_tvshow)
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_favorite -> {
+                fragment = FavoritesFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.container_layout, fragment, fragment.javaClass.simpleName)
+                    .commit()
+                supportActionBar?.title = this.resources.getString(R.string.favorites)
                 return@OnNavigationItemSelectedListener true
             }
         }

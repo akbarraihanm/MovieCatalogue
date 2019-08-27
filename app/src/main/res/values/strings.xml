@@ -240,4 +240,9 @@
     <string name="runtime">Runtime</string>
     <string name="change_language">Change Language</string>
     <string name="lang">en-US</string>
+    <string name="favorites">Favorites</string>
+    <string name="no_data_found">No data found</string>
+    <string name="favorite">Favorite</string>
+    <string name="addedFav">Added to favorite</string>
+    <string name="removeFavorite">Removed from favorite</string>
 </resources>

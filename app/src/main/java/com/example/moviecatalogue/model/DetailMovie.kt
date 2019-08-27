@@ -13,5 +13,7 @@ data class DetailMovie (
     @SerializedName("title")
     var titleMovie : String? = null,
     @SerializedName("poster_path")
-    var posterPath : String? = null
+    var posterPath : String? = null,
+    @SerializedName("id")
+    var idDetail : String? = null
 )

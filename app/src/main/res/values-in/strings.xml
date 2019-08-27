@@ -246,4 +246,9 @@
     <string name="runtime">Waktu Berjalan</string>
     <string name="change_language">Ganti Bahasa</string>
     <string name="lang">id-ID</string>
+    <string name="favorites">Favorit</string>
+    <string name="no_data_found">Data tidak ditemukan</string>
+    <string name="favorite">Favorit</string>
+    <string name="addedFav">Ditambahkan ke favorit</string>
+    <string name="removeFavorite">Dihapus dari favorit</string>
 </resources>

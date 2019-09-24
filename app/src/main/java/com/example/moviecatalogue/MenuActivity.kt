@@ -1,21 +1,18 @@
 package com.example.moviecatalogue
 
 import android.content.Intent
-import android.content.res.Configuration
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.provider.Settings
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View.GONE
-import android.widget.TextView
 import com.example.moviecatalogue.favorites.FavoritesFragment
 import com.example.moviecatalogue.movies.MovieFragment
+import com.example.moviecatalogue.reminders.RemindersActivity
+import com.example.moviecatalogue.search.SearchFragment
 import com.example.moviecatalogue.tvshows.TvShowFragment
-import kotlinx.android.synthetic.main.fragment_movie.*
 
 class MenuActivity : AppCompatActivity() {
 
@@ -51,6 +48,15 @@ class MenuActivity : AppCompatActivity() {
                 supportActionBar?.title = this.resources.getString(R.string.favorites)
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.navigation_search -> {
+                fragment = SearchFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.container_layout, fragment, fragment.javaClass.simpleName)
+                    .commit()
+                supportActionBar?.title = this.resources.getString(R.string.search)
+                return@OnNavigationItemSelectedListener true
+            }
         }
         false
     }
@@ -76,8 +82,14 @@ class MenuActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         return when(item?.itemId){
             R.id.action_change_settings ->{
-                val inte = Intent(Settings.ACTION_LOCALE_SETTINGS)
-                startActivity(inte)
+                val intent = Intent(Settings.ACTION_LOCALE_SETTINGS)
+                startActivity(intent)
+                true
+            }
+
+            R.id.action_change_reminders -> {
+                val intent = Intent(this, RemindersActivity::class.java)
+                startActivity(intent)
                 true
             }
             else -> super.onOptionsItemSelected(item)

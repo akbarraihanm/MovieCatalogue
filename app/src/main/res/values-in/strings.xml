@@ -251,4 +251,16 @@
     <string name="favorite">Favorit</string>
     <string name="addedFav">Ditambahkan ke favorit</string>
     <string name="removeFavorite">Dihapus dari favorit</string>
+    <string name="search">Cari</string>
+    <string name="search_movies">Cari Film</string>
+    <string name="search_tv_shows">Cari Acara TV</string>
+    <string name="reminder">Pengingat</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="release_reminder">Pengingat Rilis</string>
+    <string name="reminder_for_return_to_app">Pengingat untuk kembali ke aplikasi</string>
+    <string name="reminder_showing_the_movie_that_released_today">Pengingat untuk melihat film yg dirilis hari ini</string>
+    <string name="rem_set_up">Pengingat telah diatur</string>
+    <string name="rem_cancelled">Pengingat dibatalkan</string>
+    <string name="miss_you">Kami merindukanmu :(</string>
+    <string name="has_released_today">telah rilis hari ini</string>
 </resources>

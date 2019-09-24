@@ -245,4 +245,19 @@
     <string name="favorite">Favorite</string>
     <string name="addedFav">Added to favorite</string>
     <string name="removeFavorite">Removed from favorite</string>
+    <string name="search">Search</string>
+    <string name="search_movies">Search Movies</string>
+    <string name="search_tv_shows">Search Tv Shows</string>
+    <string name="reminder">Reminder</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="release_reminder">Release Reminder</string>
+    <string name="reminder_for_return_to_app">Reminder for return to app</string>
+    <string name="reminder_showing_the_movie_that_released_today">Reminder showing the movie that released today</string>
+    <string name="rem_set_up">Reminder set up</string>
+    <string name="rem_cancelled">Reminder cancelled</string>
+    <string name="miss_you">We miss you :(</string>
+    <string name="has_released_today">has released today</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
 </resources>

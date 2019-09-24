@@ -6,9 +6,9 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class TvShow(
+    var linkPoster : String = "https://image.tmdb.org/t/p/w185/",
     @SerializedName("name")
     var name : String? = null,
-    var linkPoster : String = "https://image.tmdb.org/t/p/w185/",
     @SerializedName("poster_path")
     var posterPath : String? = null,
     @SerializedName("id")

@@ -29,5 +29,13 @@ class ApiClient {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
+
+        fun getSearchItem() : Retrofit {
+            val baseUrl = "https://api.themoviedb.org/3/search/"
+            return Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+        }
     }
 }

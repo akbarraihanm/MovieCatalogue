@@ -4,6 +4,7 @@ package com.example.moviecatalogue.favorites.favmovies
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
@@ -43,6 +44,7 @@ class FavMoviesFragment : Fragment() {
 
         dbHan.open()
         listFavMovie = dbHan.query()
+        Log.d("listData","$listFavMovie")
         okView.rvFavMovie.layoutManager = LinearLayoutManager(context)
 
         if(listFavMovie.isNotEmpty()) {

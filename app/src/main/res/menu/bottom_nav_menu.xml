@@ -16,4 +16,9 @@
             android:icon="@drawable/ic_star_black"
             android:title="@string/favorites"/>
 
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search"/>
+
 </menu>

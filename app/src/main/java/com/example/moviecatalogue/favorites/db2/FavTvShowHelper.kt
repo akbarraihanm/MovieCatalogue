@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteDatabase
 import android.provider.BaseColumns._ID
 import com.example.moviecatalogue.favorites.db2.DbContract.Companion.TABLE_TVSHOW
 import com.example.moviecatalogue.favorites.db2.DbContract.FavTvShowColumn.Companion.ID_TVSHOW
+import com.example.moviecatalogue.favorites.db2.DbContract.FavTvShowColumn.Companion.LINK_POSTER
+import com.example.moviecatalogue.favorites.db2.DbContract.FavTvShowColumn.Companion.POSTER_PATH
 import com.example.moviecatalogue.favorites.db2.DbContract.FavTvShowColumn.Companion.TITLE_TVSHOW
 import com.example.moviecatalogue.model.FavoriteTvShow
 import java.sql.SQLException
@@ -34,6 +36,8 @@ class FavTvShowHelper(private val context: Context) {
         val values = ContentValues()
         values.put(ID_TVSHOW, favTvShow.id_tvshow)
         values.put(TITLE_TVSHOW, favTvShow.title_tvshow)
+        values.put(LINK_POSTER, favTvShow.link_poster)
+        values.put(POSTER_PATH, favTvShow.poster_path)
 
         return database.insert(TABLE_TVSHOW, null, values)
     }
@@ -57,6 +61,8 @@ class FavTvShowHelper(private val context: Context) {
                 favTvShow.id = cursor.getInt(cursor.getColumnIndexOrThrow(_ID))
                 favTvShow.id_tvshow = cursor.getString(cursor.getColumnIndexOrThrow(ID_TVSHOW))
                 favTvShow.title_tvshow = cursor.getString(cursor.getColumnIndexOrThrow(TITLE_TVSHOW))
+                favTvShow.link_poster = cursor.getString(cursor.getColumnIndexOrThrow(LINK_POSTER))
+                favTvShow.poster_path = cursor.getString(cursor.getColumnIndexOrThrow(POSTER_PATH))
 
                 listFavTvShow.add(favTvShow)
                 cursor.moveToNext()

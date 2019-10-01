@@ -8,7 +8,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.os.Build
-import android.support.v4.app.NotificationCompat
+import androidx.core.app.NotificationCompat
 import android.util.Log
 import android.widget.Toast
 import com.example.moviecatalogue.R
@@ -80,6 +80,7 @@ class ReleasedAlarmReceiver : BroadcastReceiver() {
     }
 
     fun cancelAlarm(context: Context?, type: String?){
+
         val alarmManager = context?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(context, ReleasedAlarmReceiver::class.java)
         val requestCode = if(type.equals(TYPE_ONE_TIME, true)) ID_ONETIME else ID_REPEATING
@@ -89,6 +90,7 @@ class ReleasedAlarmReceiver : BroadcastReceiver() {
         alarmManager.cancel(pendingIntent)
 
         Toast.makeText(context, context.getString(R.string.rem_cancelled), Toast.LENGTH_SHORT).show()
+
     }
 
     private fun isDateInvalid(time: String?, format: String): Boolean {

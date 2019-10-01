@@ -2,13 +2,15 @@ package com.example.moviecatalogue.favorites.favmovies
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.widget.RecyclerView
-import android.util.Log
+import android.net.Uri
+import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.detailmovie.DetailActivity
+import com.example.moviecatalogue.favorites.db2.DbContract.FavMovieColumn.Companion.CONTENT_URI
 import com.example.moviecatalogue.model.FavoriteMovie
 import kotlinx.android.synthetic.main.rvfavmovie_item.view.*
 
@@ -36,6 +38,12 @@ class FavMovieAdapter(private val context: Context, private val listFavMovie : A
                 }
                 cv_list_favmovie.setOnClickListener {
                     val i = Intent(con, DetailActivity::class.java)
+                    val uri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        Uri.parse("$CONTENT_URI/$id")
+                    } else {
+                        TODO("VERSION.SDK_INT < LOLLIPOP")
+                    }
+                    i.data = uri
                     i.putExtra(DetailActivity.id_movie, id)
                     con.startActivity(i)
                 }

@@ -1,8 +1,9 @@
 package com.example.moviecatalogue.detailmovie
 
+import android.content.ContentValues
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -11,9 +12,13 @@ import android.view.View.VISIBLE
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.moviecatalogue.R
+import com.example.moviecatalogue.favorites.db2.DbContract.FavMovieColumn.Companion.CONTENT_URI
+import com.example.moviecatalogue.favorites.db2.DbContract.FavMovieColumn.Companion.ID_MOVIE
+import com.example.moviecatalogue.favorites.db2.DbContract.FavMovieColumn.Companion.LINK_POSTER
+import com.example.moviecatalogue.favorites.db2.DbContract.FavMovieColumn.Companion.POSTER_PATH
+import com.example.moviecatalogue.favorites.db2.DbContract.FavMovieColumn.Companion.TITLE_MOVIE
 import com.example.moviecatalogue.favorites.db2.FavMovieHelper
 import com.example.moviecatalogue.model.DetailMovie
-import com.example.moviecatalogue.model.FavoriteMovie
 import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity(), DetailMovieView {
@@ -105,12 +110,27 @@ class DetailActivity : AppCompatActivity(), DetailMovieView {
     private fun addToFavorite(){
         try {
             dbHan?.open()
-            val favMovie = FavoriteMovie()
-            favMovie.id_movie = id_movie
-            favMovie.title_movie = dataDetailMovie?.titleMovie
-            Log.d("cekFav", favMovie.toString())
+//            val favMovie = FavoriteMovie()
+            val values = ContentValues()
+//            favMovie.id_movie = id_movie
+//            favMovie.title_movie = dataDetailMovie?.titleMovie
+//            favMovie.link_poster = dataDetailMovie?.linkPoster
+//            favMovie.poster_path = dataDetailMovie?.posterPath
 
-            dbHan?.insert(favMovie)
+            values.put(ID_MOVIE, id_movie)
+            values.put(TITLE_MOVIE, dataDetailMovie?.titleMovie)
+            values.put(LINK_POSTER, dataDetailMovie?.linkPoster)
+            values.put(POSTER_PATH, dataDetailMovie?.posterPath)
+            Log.d("cekFav", values.toString())
+
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//
+//            }
+            contentResolver.insert(CONTENT_URI, values)
+            dbHan?.insertProvider(values)
+            setResult(101)
+
+//            dbHan?.insert(favMovie)
             Toast.makeText(this, getString(R.string.addedFav), Toast.LENGTH_SHORT).show()
             dbHan?.close()
         }catch (e : Exception){
@@ -123,6 +143,7 @@ class DetailActivity : AppCompatActivity(), DetailMovieView {
         try {
             dbHan?.open()
             dbHan?.delete(id)
+            dbHan?.deleteProvider(id)
             Toast.makeText(this, getString(R.string.removeFavorite), Toast.LENGTH_SHORT).show()
             dbHan?.close()
         }catch (e:Exception){Log.d("cekFav2", e.toString())}

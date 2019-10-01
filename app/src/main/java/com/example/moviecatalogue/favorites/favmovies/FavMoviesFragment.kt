@@ -2,8 +2,8 @@ package com.example.moviecatalogue.favorites.favmovies
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +14,7 @@ import com.example.moviecatalogue.R
 import com.example.moviecatalogue.favorites.db2.FavMovieHelper
 import com.example.moviecatalogue.model.FavoriteMovie
 import kotlinx.android.synthetic.main.fragment_fav_movies.view.*
+
 
 /**
  * A simple [Fragment] subclass.
@@ -44,8 +45,10 @@ class FavMoviesFragment : Fragment() {
 
         dbHan.open()
         listFavMovie = dbHan.query()
+
         Log.d("listData","$listFavMovie")
         okView.rvFavMovie.layoutManager = LinearLayoutManager(context)
+
 
         if(listFavMovie.isNotEmpty()) {
             okView.rvFavMovie.adapter = context?.let { FavMovieAdapter(it, listFavMovie) }
@@ -56,4 +59,5 @@ class FavMoviesFragment : Fragment() {
             dbHan.close()
         }
     }
+
 }

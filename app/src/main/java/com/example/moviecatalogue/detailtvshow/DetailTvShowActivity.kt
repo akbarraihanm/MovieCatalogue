@@ -1,8 +1,8 @@
 package com.example.moviecatalogue.detailtvshow
 
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -25,7 +25,7 @@ class DetailTvShowActivity : AppCompatActivity(), DetailTvShowView {
     private var menuItem : Menu? = null
     private var isFavorite : Boolean = false
     private var dbHan : FavTvShowHelper? = FavTvShowHelper(this)
-    private var dataDetailTvShow : DetailTvShow? = null
+    private var detailTvShow : DetailTvShow? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,12 +40,12 @@ class DetailTvShowActivity : AppCompatActivity(), DetailTvShowView {
         favoriteState(id_tvshow)
     }
 
-    override fun showDataDetailTvShow(detailTvShowData: DetailTvShow) {
+    override fun showDataDetailTvShow(dataDetailTvShow: DetailTvShow) {
         showLoading()
 
-        dataDetailTvShow = detailTvShowData
+        detailTvShow = dataDetailTvShow
 
-        with(detailTvShowData){
+        with(dataDetailTvShow){
             tv_judul.text = nameTvShow
             tv_status.text = statusTvShow
             tv_runtime.text = runTime[0]
@@ -79,7 +79,10 @@ class DetailTvShowActivity : AppCompatActivity(), DetailTvShowView {
             dbHan?.open()
             val favTvShow = FavoriteTvShow()
             favTvShow.id_tvshow = id_tvshow
-            favTvShow.title_tvshow = dataDetailTvShow?.nameTvShow
+            favTvShow.title_tvshow = detailTvShow?.nameTvShow
+            favTvShow.link_poster = "https://image.tmdb.org/t/p/w185"
+            favTvShow.poster_path = detailTvShow?.posterPath
+            Log.d("cekFav1", favTvShow.toString())
             dbHan?.insert(favTvShow)
             Toast.makeText(this, getString(R.string.addedFav), Toast.LENGTH_SHORT).show()
             dbHan?.close()

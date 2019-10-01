@@ -5,12 +5,12 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
             android:layout_marginTop="10dp"
             android:id="@+id/cv_list_favmovie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="6dp">
+            app:cardCornerRadius="10dp">
         <LinearLayout
                 android:padding="16dp"
                 android:orientation="vertical"
@@ -24,5 +24,5 @@
                     android:textColor="#000"
                     android:textSize="18sp"/>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

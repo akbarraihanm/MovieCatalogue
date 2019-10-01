@@ -263,4 +263,6 @@
     <string name="rem_cancelled">Pengingat dibatalkan</string>
     <string name="miss_you">Kami merindukanmu :(</string>
     <string name="has_released_today">telah rilis hari ini</string>
+    <string name="appwidget_text">Movie Catalogue</string>
+    <string name="add_widget">Tambah Widget</string>
 </resources>

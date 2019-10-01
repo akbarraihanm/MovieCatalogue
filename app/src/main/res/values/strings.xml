@@ -257,7 +257,7 @@
     <string name="rem_cancelled">Reminder cancelled</string>
     <string name="miss_you">We miss you :(</string>
     <string name="has_released_today">has released today</string>
-    <string name="appwidget_text">EXAMPLE</string>
+    <string name="appwidget_text">Movie Catalogue</string>
     <string name="add_widget">Add widget</string>
 
 </resources>

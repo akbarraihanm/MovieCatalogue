@@ -8,24 +8,32 @@ class DbHelper(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_V
 
     companion object{
         val DB_NAME = "Favorite"
-        val DB_VERSION = 1
+        val DB_VERSION = 4
         val createTableFavMovie = String.format("CREATE TABLE %s" +
                 " (%s INTEGER PRIMARY KEY AUTOINCREMENT," +
+                " %s TEXT NOT NULL," +
+                " %s TEXT NOT NULL," +
                 " %s TEXT NOT NULL," +
                 " %s TEXT NOT NULL)",
             DbContract.TABLE_MOVIE,
             DbContract.FavMovieColumn._ID,
             DbContract.FavMovieColumn.ID_MOVIE,
-            DbContract.FavMovieColumn.TITLE_MOVIE
+            DbContract.FavMovieColumn.TITLE_MOVIE,
+            DbContract.FavMovieColumn.LINK_POSTER,
+            DbContract.FavMovieColumn.POSTER_PATH
         )
         val createTableFavTvShow = String.format("CREATE TABLE %s" +
                 " (%s INTEGER PRIMARY KEY AUTOINCREMENT," +
+                " %s TEXT NOT NULL," +
+                " %s TEXT NOT NULL," +
                 " %s TEXT NOT NULL," +
                 " %s TEXT NOT NULL)",
             DbContract.TABLE_TVSHOW,
             DbContract.FavTvShowColumn._ID,
             DbContract.FavTvShowColumn.ID_TVSHOW,
-            DbContract.FavTvShowColumn.TITLE_TVSHOW
+            DbContract.FavTvShowColumn.TITLE_TVSHOW,
+            DbContract.FavTvShowColumn.LINK_POSTER,
+            DbContract.FavTvShowColumn.POSTER_PATH
         )
     }
 
